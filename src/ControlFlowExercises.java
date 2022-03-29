@@ -85,19 +85,24 @@ public class ControlFlowExercises {
         System.out.println("Please enter a number between 0 and 100.");
 
         int usersNum = sc.nextInt();
-        System.out.println(usersNum);
 
+        System.out.print("Continue? [y/N] ");
+        String userInput = sc.next();
 
-        if(usersNum >= 88){
-            System.out.println("Your grade is a: A.");
-        } else if (usersNum >= 80){
-            System.out.println("Your grade is a: B.");
-        } else if (usersNum >= 67){
-            System.out.println("Your grade is a: C.");
-        } else if (usersNum >= 60){
-            System.out.println("Your grade is a: D.");
-        } else if (usersNum >= 0){
-            System.out.println("Your grade is a: F.");
+        if(userInput.equals("y")){
+            if(usersNum >= 88){
+                System.out.println("Your grade is a: A");
+            } else if (usersNum >= 80){
+                System.out.println("Your grade is a: B");
+            } else if (usersNum >= 67){
+                System.out.println("Your grade is a: C");
+            } else if (usersNum >= 60){
+                System.out.println("Your grade is a: D");
+            } else if (usersNum >= 0){
+                System.out.println("Your grade is a: F");
+            }
+        } else {
+            System.out.println("Are you scared?");
         }
 
     }
