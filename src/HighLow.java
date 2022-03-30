@@ -6,7 +6,12 @@ import java.util.Scanner;
 public class HighLow {
 
     public static void playGame(int num, int guess){
-        int counter = guess + 1;
+        int counter = guess - 1;
+        if(counter == 0){
+            System.out.println("Game over...");
+            return;
+        }
+
         System.out.println("===== Guess No: " + counter + " =====");
 
         Scanner sc = new Scanner(System.in);
@@ -34,7 +39,7 @@ public class HighLow {
         int randomNum = random.nextInt(100);
         System.out.println(randomNum);
 
-        playGame(randomNum, 0);
+        playGame(randomNum, 11);
     }
 
 }
