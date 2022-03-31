@@ -26,25 +26,25 @@ class Post {
 
 public class OOPLecture {
     public static void main(String[] args){
-        Post firstPost = new Post();
-
-        firstPost.author = "Sam Arguello";
-        firstPost.title = "Carp fishing is rad!";
-        firstPost.creationDate = "03/31";
-        firstPost.content = "Carp are americas finest sport fish and available to catch anywhere!";
-
-
-        System.out.println("firstPost = " + firstPost.getPost());
-
-        Post secondPost = new Post();
-
-        secondPost.updatePost(
-                "Bass fishing is overrated",
-                "Sam Arguello",
-                "They dont even fight that hard.",
-                "03/31");
-
-        System.out.println(secondPost.getPost());
+//        Post firstPost = new Post();
+//
+//        firstPost.author = "Sam Arguello";
+//        firstPost.title = "Carp fishing is rad!";
+//        firstPost.creationDate = "03/31";
+//        firstPost.content = "Carp are americas finest sport fish and available to catch anywhere!";
+//
+//
+//        System.out.println("firstPost = " + firstPost.getPost());
+//
+//        Post secondPost = new Post();
+//
+//        secondPost.updatePost(
+//                "Bass fishing is overrated",
+//                "Sam Arguello",
+//                "They dont even fight that hard.",
+//                "03/31");
+//
+//        System.out.println(secondPost.getPost());
 
 
 
