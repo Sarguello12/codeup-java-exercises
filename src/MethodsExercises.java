@@ -1,8 +1,9 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class MethodsExercises {
 //1.
+class arithmetic {
+
     public static int addition(int num1, int num2){
         return num1 + num2;
     }
@@ -34,6 +35,10 @@ public class MethodsExercises {
     public static int modulus(int num1, int num2){
         return num1 % num2;
     }
+}
+
+
+public class MethodsExercises {
 
     // TODO: use recursion to print out a given number up through 100
      public static void countTo100(int num) {
@@ -126,11 +131,11 @@ public class MethodsExercises {
 
 
     public static void main (String[] args){
-//        System.out.println(addition(2, 2));
-//        System.out.println(subtraction(2, 2));
-//        System.out.println(multiplication(2, 2));
-//        System.out.println(division(2, 2));
-//        System.out.println(modulus(2, 2));
+        System.out.println(arithmetic.addition(2, 2));
+        System.out.println(arithmetic.subtraction(2, 2));
+        System.out.println(arithmetic.multiplication(2, 2));
+        System.out.println(arithmetic.division(2, 2));
+        System.out.println(arithmetic.modulus(2, 2));
 //        countTo100(1);
 //        addNums(37);
 //        System.out.println(addNums(10));

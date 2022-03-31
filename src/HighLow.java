@@ -1,5 +1,3 @@
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,21 +10,21 @@ public class HighLow {
             return;
         }
 
-        System.out.println("===== Guess No: " + counter + " =====");
+        System.out.println("===== Guesses Remaining: " + counter + " =====");
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Guess a number?");
+        System.out.println("        Guess a number?");
         int userInput = sc.nextInt();
 
         if(num == userInput){
-            System.out.println("GOOD GUESS!!");
+            System.out.println("===== GOOD GUESS!! =====");
             return;
         }
         if(num > userInput){
-            System.out.println("HIGHER");
+            System.out.println("------ HIGHER ------");
         }
         if(num < userInput){
-            System.out.println("LOWER");
+            System.out.println("----- LOWER -----");
         }
 
         playGame(num, counter);
@@ -37,7 +35,6 @@ public class HighLow {
     public static void main(String[] args){
         Random random = new Random();
         int randomNum = random.nextInt(100);
-        System.out.println(randomNum);
 
         playGame(randomNum, 11);
     }
