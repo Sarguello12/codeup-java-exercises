@@ -4,9 +4,12 @@ import static java.lang.Math.PI;
 
 public class Circle {
     private double radius;
+    static int totalCircles = 0;
+
 
     public Circle(double radius){
         this.radius = radius;
+        totalCircles++;
     }
 
     public double getArea(){
