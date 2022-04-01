@@ -1,6 +1,7 @@
 package shapes;
 import util.Input;
 
+import static shapes.Circle.drawCircle;
 import static shapes.Circle.totalCircles;
 
 class create {
@@ -17,9 +18,12 @@ class create {
 
             Input firstInput = new Input();
             Circle firstCircle = new Circle(firstInput.getDouble());
+//            System.out.println(firstCircle.getRadius());
+            drawCircle(firstCircle.getRadius());
 
             System.out.println("Your circles area is " + firstCircle.getArea());
-            System.out.println("Your circles circumference is " + firstCircle.getCircumference());
+            System.out.println("Your circles circumference is " + firstCircle.getCircumference() + "\n");
+
             createCircle();
     }
 }
