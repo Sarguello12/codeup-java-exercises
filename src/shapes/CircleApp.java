@@ -18,11 +18,10 @@ class create {
 
             Input firstInput = new Input();
             Circle firstCircle = new Circle(firstInput.getDouble());
-//            System.out.println(firstCircle.getRadius());
             drawCircle(firstCircle.getRadius());
 
-            System.out.println("Your circles area is " + firstCircle.getArea());
-            System.out.println("Your circles circumference is " + firstCircle.getCircumference() + "\n");
+            System.out.printf("Your circles area is %.1f\n",firstCircle.getArea());
+            System.out.printf("Your circles circumference is %.1f\n", firstCircle.getCircumference());
 
             createCircle();
     }
@@ -32,11 +31,6 @@ class create {
 
 public class CircleApp {
     public static void main(String[] args) {
-            Input firstInput = new Input();
-//            Circle firstCircle = new Circle(firstInput.getDouble());
-//
-//            System.out.println("Your circles area is " + firstCircle.getArea());
-//            System.out.println("Your circles circumference is " + firstCircle.getCircumference());
         create.createCircle();
     }
 }
