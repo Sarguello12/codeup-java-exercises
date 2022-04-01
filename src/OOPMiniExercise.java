@@ -52,13 +52,13 @@ class Dish {
 
 class DishTools{
 
-    public static int AVG_COST_OF_DISH_IN_CENTS = 1300;
+   final static int AVG_COST_OF_DISH_IN_CENTS = 1300;
 
     public static void shoutDishName(Dish dish){
         System.out.println(dish.getNameOfDish().toUpperCase());
     }
 
-    public static void analyzeDishCost(Dish dish, int AVG_COST_OF_DISH_IN_CENTS){
+    public static void analyzeDishCost(Dish dish){
         if(dish.getCostInCents() > AVG_COST_OF_DISH_IN_CENTS){
             System.out.println("This dish is above the average cost.");
         } else {
@@ -97,7 +97,7 @@ class DishTest {
         System.out.println("There are " + Dish.totalDishes + " total dishes.");
 
         DishTools.shoutDishName(dish1);
-        DishTools.analyzeDishCost(dish1, DishTools.AVG_COST_OF_DISH_IN_CENTS);
+        DishTools.analyzeDishCost(dish1);
         DishTools.flipRecommendation(dish3);
         DishTools.setAveragePrice(dish3);
         dish3.printSummary();
