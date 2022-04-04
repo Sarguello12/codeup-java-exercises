@@ -5,8 +5,6 @@ public class ServerNameGenerator {
     public static String[] adjectives = {"charming", "cruel", "fantastic", "gentle", "huge", "perfect", "rough", "sharp", "tasty", "zealous"};
     public static String[] nouns = {"king", "city", "country", "planet", "animal", "father", "chair", "cow", "apple", "flower"};
 
-
-
     public static String nameGenerator(String[] adjectives, String[] nouns){
         Random random1 = new Random();
         Random random2 = new Random();
