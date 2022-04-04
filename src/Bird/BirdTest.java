@@ -18,5 +18,8 @@ public class BirdTest {
         lesserGoldFinch.setName("Lesser Gold Finch");
         System.out.print(lesserGoldFinch.getName() + " goes ");
         lesserGoldFinch.makeNoise();
+
+        Bird theBird = new Bird();
+        Bird Penguin = new Bird();
     }
 }
