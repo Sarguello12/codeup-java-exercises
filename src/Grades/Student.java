@@ -18,7 +18,7 @@ public class Student {
     }
 
     // returns the average of the students grades
-    private int getGradeAverage(List <Integer> grades) {
+    public int getGradeAverage(List <Integer> grades) {
         Integer sum = 0;
 
         for (Integer grade : grades) {
