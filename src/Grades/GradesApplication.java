@@ -7,22 +7,22 @@ public class GradesApplication{
 
     public static void main(String[] args) {
         //creating new students ArrayLists
-        Student sam = new Student("Sam", new ArrayList<>());
+        Student sam = new Student("Sam");
         sam.addGrade(100);
         sam.addGrade(95);
         sam.addGrade(98);
 
-        Student jen = new Student("Jen", new ArrayList<>());
+        Student jen = new Student("Jen");
         jen.addGrade(80);
         jen.addGrade(100);
         jen.addGrade(97);
 
-        Student mia = new Student("Mia", new ArrayList<>());
+        Student mia = new Student("Mia");
         mia.addGrade(100);
         mia.addGrade(75);
         mia.addGrade(98);
 
-        Student luke = new Student("Luke", new ArrayList<>());
+        Student luke = new Student("Luke");
         luke.addGrade(90);
         luke.addGrade(80);
         luke.addGrade(95);
@@ -62,14 +62,18 @@ public class GradesApplication{
                 }
             }
             //if user enters an individual name students information will be displayed to the console
-            if (students.containsKey(userInput1)) {
+            else if (students.containsKey(userInput1)) {
                 System.out.println("Name: " + students.get(userInput1).getName() + "\nGithub UserName: " + userInput1 + "\nCurrent Average: " + students.get(userInput1).getGradeAverage(students.get(userInput1).getGrades()) + "%" + "\nGrades: " + students.get(userInput1).getGrades());
+            } else {
+                System.out.println("Sorry no student found");
             }
 
             //prompts user if they would like to view more information
             System.out.println("Would you like to view another student? [y/N]");
             Scanner sc2 = new Scanner(System.in);
             userInput2 = sc2.nextLine();
+
+
         //while user enters "y" code will continue to run
         } while(userInput2.equals("y"));
 
