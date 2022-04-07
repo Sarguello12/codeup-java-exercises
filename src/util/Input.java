@@ -29,8 +29,12 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Please enter a numerical value.");
-        return scanner.nextInt();
+        try {
+            return Integer.valueOf(getString());
+        } catch(NumberFormatException nfe){
+            System.out.println("That is not a number " + nfe);
+        }
+        return getInt();
     }
 
     public double getDouble(double min, double max){
@@ -49,6 +53,23 @@ public class Input {
         return scanner.nextDouble();
     }
 
+    public double getDouble2(){
+        try {
+            return Double.valueOf(getString());
+        } catch(NumberFormatException nfe){
+            System.out.println("That is not a double " + nfe);
+        }
+        return getDouble();
+    }
+
+    public int getBinary(){
+        return Integer.valueOf(getString(), 2);
+    }
+
+    public long getHex(){
+        return Long.valueOf(getString(), 16);
+    }
+
 
 }
 
@@ -59,5 +80,9 @@ class InputTest {
 //        firstPrompt.yesNo();
 //        firstPrompt.getInt(1, 10);
 //        firstPrompt.getDouble(1, 10);
+//        System.out.println(firstPrompt.getInt());
+//        System.out.println(firstPrompt.getDouble2());
+//        System.out.println(firstPrompt.getBinary());
+        System.out.println(firstPrompt.getHex());
     }
 }
