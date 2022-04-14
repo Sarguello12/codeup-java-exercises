@@ -42,65 +42,65 @@ public class JavaWarmups {
 //8. Write a constructor for PetDog that sets its name, type, and trained properties.
 //9. Write an instance method in PetDog  called isTrained that returns the boolean value of the trained property.
 
-   class Practice {
-        public static void main(String[] args) {
-
-
-
-        }
-
-       public static int subtractTen(int num){
-           return num - 10;
-       }
-
-       public static double average(int[] nums){
-            double sum = 0;
-
-            for(Integer num : nums){
-                sum += num;
-            }
-            return sum / nums.length;
-       }
-    }
-
-    class pet {
-       private String name;
-       private String type;
-
-       public pet(){};
-
-        public pet(String name, String type) {
-            this.name = name;
-            this.type = type;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public String getType() {
-            return type;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public void setType(String type) {
-            this.type = type;
-        }
-    }
-
-    class PetDog extends pet {
-       private boolean isTrained;
-
-        public PetDog(String name, String type, boolean isTrained) {
-            super(name, type);
-            this.isTrained = isTrained;
-        }
-
-
-    }
+//   class Practice {
+//        public static void main(String[] args) {
+//
+//
+//
+//        }
+//
+//       public static int subtractTen(int num){
+//           return num - 10;
+//       }
+//
+//       public static double average(int[] nums){
+//            double sum = 0;
+//
+//            for(Integer num : nums){
+//                sum += num;
+//            }
+//            return sum / nums.length;
+//       }
+//    }
+//
+//    class pet {
+//       private String name;
+//       private String type;
+//
+//       public pet(){};
+//
+//        public pet(String name, String type) {
+//            this.name = name;
+//            this.type = type;
+//        }
+//
+//        public String getName() {
+//            return name;
+//        }
+//
+//        public String getType() {
+//            return type;
+//        }
+//
+//        public void setName(String name) {
+//            this.name = name;
+//        }
+//
+//        public void setType(String type) {
+//            this.type = type;
+//        }
+//    }
+//
+//    class PetDog extends pet {
+//       private boolean isTrained;
+//
+//        public PetDog(String name, String type, boolean isTrained) {
+//            super(name, type);
+//            this.isTrained = isTrained;
+//        }
+//
+//
+//    }
 
 //10. Create an interface named Companion. The Companion interface should specify an instance method named snuggle that has no arguments and returns a String. Change your PetDog class so it implements the Companion interface. The implementation of the snuggle method on the PetDog class should return "name wants to snuggle", where name is the inherited instance property.
 //11. Create a PetDogTest class, instantiate a PetDog, and verify that the snuggle method works correctly.
